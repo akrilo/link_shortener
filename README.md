@@ -44,9 +44,9 @@
 4. Создайте базу данных MySQL для приложения:
     - Откройте phpMyAdmin в браузере (http://localhost/phpmyadmin).
     - Создайте новую базу данных с именем "link_shortener".
-5. Создайте таблицы в базе данных с помощью миграций:
+5. Создайте таблицы в базе данных:
     ```
-    php bin/console doctrine:migrations:migrate
+    php bin/console doctrine:schema:update --force
     ```
 6. Запустите веб-сервер Symfony:
     ```
