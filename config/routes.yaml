@@ -1,0 +1,15 @@
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
+
+app_link_create_short_link:
+    path: /create-short-link
+    controller: App\Controller\LinkController::createShortLink
+    methods: [POST]
+
+app_link_redirect_short_link:
+    path: /{shortUrl}
+    controller: App\Controller\LinkController::redirectShortLink
+    methods: [GET]
