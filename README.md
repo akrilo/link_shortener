@@ -7,6 +7,8 @@
 Перед началом установки у вас должны быть установлены следующие компоненты:
 
 - [XAMPP](https://www.apachefriends.org/index.html) - для установки и запуска сервера Apache, MySQL и PHP.
+- [Composer](https://getcomposer.org/download/) - для управления зависимостями PHP.
+- [Symfony CLI](https://symfony.com/download) - для запуска веб-сервера Symfony и управления Symfony-приложением.
 
 ## Установка
 
@@ -18,7 +20,15 @@
 
     После установки запустите XAMPP и запустите Apache и MySQL серверы.
 
-3. **Склонируйте репозиторий:**
+3. **Установите Composer:**
+
+    Следуйте инструкциям на странице [установки Composer](https://getcomposer.org/download/) для установки Composer на вашу систему.
+
+4. **Установите Symfony CLI:**
+
+    Следуйте инструкциям на странице [установки Symfony CLI](https://symfony.com/download) для установки Symfony CLI на вашу систему.
+
+5. **Склонируйте репозиторий:**
 
     Откройте терминал и выполните следующую команду:
 
@@ -26,7 +36,7 @@
     git clone https://github.com/akrilo/link_shortener.git
     ```
 
-4. **Установите зависимости Symfony:**
+6. **Установите зависимости Symfony:**
 
     Перейдите в директорию проекта и выполните следующую команду:
 
@@ -34,7 +44,7 @@
     composer install
     ```
 
-5. **Настройте базу данных:**
+7. **Настройте базу данных:**
 
     - Запустите phpMyAdmin, перейдя по адресу http://localhost/phpmyadmin/.
     - Создайте новую базу данных с именем `link_shortener`.
