@@ -20,14 +20,6 @@ class LinkController extends AbstractController
     }
 
     /**
-     * @Route("/", name="homepage")
-     */
-    public function index(): Response
-    {
-        return $this->render('index.html.twig');
-    }
-
-    /**
      * @Route("/create-short-link", name="create_short_link", methods={"POST"})
      */
     public function createShortLink(Request $request): Response
